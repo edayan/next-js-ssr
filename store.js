@@ -21,6 +21,7 @@ export const addItem = (item) => {
 }
 
 export const reducer = (state = initialState, action) => {
+    console.log(action.cards)
     switch (action.type) {
         case 'INITIAL_CARDS':
             return action.cards
